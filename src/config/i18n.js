@@ -1,25 +1,54 @@
+
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// Import JSON files directly
-import enTranslation from '../locales/en.json';
-import jpTranslation from '../locales/jp.json';
+// Import translation files
+import { homeTranslations as homeEn } from '../locales/translations/home/en'; // English translations
+import { homeTranslations as homeJp } from '../locales/translations/home/jp'; // Japanese translations
+import { membersTranslations as membersEn } from '../locales/translations/members/en' // English Members translations
+import { membersTranslations as membersJp } from '../locales/translations/members/jp'; // Japanese Members translations
+
+import { stockTranslations as stockEn } from '../locales/translations/stock/en'; // English Stock translations
+import { stockTranslations as stockJp } from '../locales/translations/stock/jp'; // Japanese Stock translations
+import { myPageTranslations as myPageEn } from '../locales/translations/myPage/en'; // English My Page translations
+import { myPageTranslations as myPageJp } from '../locales/translations/myPage/jp'; // Japanese My Page translations
+import { vendingMachineTranslations as vendingEn } from '../locales/translations/vendingMachine/en'; // English Vending Machine translations
+import { vendingMachineTranslations as vendingJp } from '../locales/translations/vendingMachine/jp'; // Japanese Vending Machine translations
+
+import { loginTranslations as loginEn } from '../locales/translations/login/en'; // English Login translations
+import { loginTranslations as loginJp } from '../locales/translations/login/jp'; // Japanese Login translations
+
+
 
 i18n
-  .use(initReactI18next) // Passes i18n instance to react-i18next
+  .use(initReactI18next)
   .init({
     resources: {
       en: {
-        translation: enTranslation, // Use the imported translation
+        translation: {
+          ...homeEn,
+          ...stockEn,
+          ...vendingEn,
+          ...membersEn,
+          ...myPageEn,
+          ...loginEn
+        },
       },
       jp: {
-        translation: jpTranslation, // Use the imported translation
+        translation: {
+          ...homeJp,
+          ...stockJp,
+          ...vendingJp,
+          ...membersJp,
+          ...myPageJp,
+          ...loginJp
+        },
       },
     },
-    lng: 'en', // default language
-    fallbackLng: 'en', // use 'en' if detected lng is not available
+    lng: 'en',
+    fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, // react already safes from xss
+      escapeValue: false, 
     },
   });
 

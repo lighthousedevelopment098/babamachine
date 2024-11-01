@@ -7,7 +7,7 @@ import NotFound from '../pages/NotFound';
 import Login from '../components/forms/LoginForm';
 
 const routes = [
-  { path: '/', name: 'home', component: Home, showInNav: true }, // Use lowercase for translation keys
+  { path: '/', name: 'home', component: Home, showInNav: true}, // Use lowercase for translation keys
   { path: '/stock', name: 'stock', component: Stock, showInNav: true },
   { path: '/vending-machine', name: 'vending_machine', component: VendingMachine, showInNav: true },
   { path: '/members', name: 'members', component: Members, showInNav: true },
