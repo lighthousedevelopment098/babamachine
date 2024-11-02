@@ -11,7 +11,7 @@ module.exports = {
         secondary: '#2F2F2F', // Custom  gray
         lightgray: '#FBBF24',    // Custom lightgary color
         graycustum:'#5B5B5B' ,// News Section bg-color
-        gray:'#686868',//last section bg-color
+        // gray:'#686868',//last section bg-color
         black:'#0A0A0A', //black color 
         white:'#FFFFFF' ,//white color
 
