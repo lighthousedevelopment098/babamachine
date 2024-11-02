@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const MainLayout = ({ children }) => {
   return <main className="w-full mx-auto ">{children}</main>;
