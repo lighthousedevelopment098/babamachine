@@ -14,6 +14,7 @@ module.exports = {
         gray:'#686868',//last section bg-color
         black:'#0A0A0A', //black color 
         white:'#FFFFFF' ,//white color
+      
 
         texthover:'#7F7F7F',//for text hover
         textgreen:'#1C6A1F'//primary text hover
@@ -30,6 +31,10 @@ module.exports = {
       padding: {
         'custom': '2rem', // Custom padding
       },
+      fontSize:
+      {
+      'size': '1rem'
+      }
     },
   },
   plugins: [],

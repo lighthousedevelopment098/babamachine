@@ -18,7 +18,8 @@ import { vendingMachineTranslations as vendingJp } from '../locales/translations
 import { loginTranslations as loginEn } from '../locales/translations/login/en'; // English Login translations
 import { loginTranslations as loginJp } from '../locales/translations/login/jp'; // Japanese Login translations
 
-
+import { footerTranslator as footerEn } from '../components/footer/en';
+import { footerTranslator as footerJp } from '../components/footer/jp';
 
 i18n
   .use(initReactI18next)
@@ -31,7 +32,8 @@ i18n
           ...vendingEn,
           ...membersEn,
           ...myPageEn,
-          ...loginEn
+          ...loginEn,
+          ...footerEn
         },
       },
       jp: {
@@ -41,7 +43,8 @@ i18n
           ...vendingJp,
           ...membersJp,
           ...myPageJp,
-          ...loginJp
+          ...loginJp,
+          ...footerJp
         },
       },
     },
