@@ -1,0 +1,190 @@
+/* Universal Reset
+* {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 16px;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", Osaka, sans-serif;
+    line-height: 1.6;
+    background-color: #eaeaea;
+  }
+  
+
+  ul, li, dl, dt, dd {
+    list-style: none;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  
+
+  .bg-gray04 {
+    background-color: #686868;
+  }
+  
+  .content {
+    padding: 80px 0;
+  }
+  
+  .inner {
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  
+
+  .members-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  
+  .members-box .box {
+    padding: 6.1% 6.5% 0;
+    background-color: #2ec933;
+  }
+  
+  .members-box figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .members-box .box .heading {
+    margin-bottom: 40px;
+  }
+  
+  .members-box .box .btn02 {
+    margin-top: 40px;
+  }
+  
+  
+  .link-list {
+    margin-top: 10px;
+  }
+  
+  .link-list li figure {
+    width: 38.5%;
+    margin: 0 auto 20px;
+  }
+  
+  .link-list li .heading {
+    margin-bottom: 0.25em;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .link-list li .txt {
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  .link-list li a {
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 11.5% 7.7% 6.2%;
+    background-color: #ffffff;
+  }
+  
+  #top #blockLinks .link-list li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent #2ec933 #2ec933 transparent;
+  }
+  
+  a, a:visited {
+    color: #000;
+    text-decoration: none;
+    transition: opacity 0.4s;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    opacity: 0.5;
+  }
+  
+  
+  .flex.double > * {
+    width: calc((100% - 80px) / 2);
+  }
+  
+  #blockLinks .members-box > * {
+    width: 50%;
+  }
+  
+  #blockLinks .link-list > * {
+    width: calc((100% - 10px) / 2);
+  }
+  
+
+  .merit dt, .merit dd {
+    font-weight: bold;
+  }
+  
+  .merit dt {
+    color: #ffffff;
+  }
+  
+  .merit dd {
+    margin-top: 0.25em;
+    font-size: 22px;
+    font-feature-settings: "palt";
+  }
+  
+  .merit dd + dt {
+    margin-top: 0.75em;
+  }
+  
+  .merit dt span, .merit dd span {
+    display: inline;
+    padding-bottom: 0.25em;
+    border-bottom: 3px solid #ffffff;
+  }
+  
+  .merit dd span {
+    border-color: #000000;
+  }
+  
+
+  .btn02 > * {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    height: 50px;
+    padding: 0 1em;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 25px;
+  }
+   */

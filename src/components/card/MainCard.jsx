@@ -3,7 +3,7 @@ import React from "react";
 
 const MainCard = ({ data }) => {
   return (
-    <div className="relative w-full bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer group md:max-w-sm lg:max-w-md">
+    <div className="relative h-full md:h-[70vh] w-full bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer group md:max-w-sm lg:max-w-md">
       <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
         {/* <span className="text-white font-semibold">View Details</span> */}
       </div>
@@ -17,12 +17,12 @@ const MainCard = ({ data }) => {
         {/* Label Badge */}
         {data.label && (
           <span
-            className={`absolute top-2 left-2 px-2 py-1 text-xs font-semibold text-white rounded ${
+            className={`absolute top-0 left-0 px-3 py-1 text-lg text-white ${
               data.label === "New"
                 ? "bg-primary"
                 : data.label === "Pickup"
-                ? "bg-red-500"
-                : "bg-gray-500"
+                ? "bg-gray-500"
+                : "bg-red-500"
             }`}
           >
             {data.label}
