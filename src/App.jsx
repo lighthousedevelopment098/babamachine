@@ -4,6 +4,7 @@ import Header from './components/common/Header';
 import MainLayout from './layouts/MainLayout';
 import routes from './config/routes';
 import './styles/globals.css';
+import Footer from './components/footer/footer';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           ))}
         </Routes>
       </MainLayout>
+      <Footer/>
     </Router>
   );
 };
