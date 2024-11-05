@@ -1,8 +1,11 @@
 // src/components/card/MainCard.js
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MainCard = ({ data }) => {
   return (
+    <Link to='/stockdetail'>
+
     <div className="relative h-full md:h-[70vh] w-full bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer group md:max-w-sm lg:max-w-md">
       <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
         {/* <span className="text-white font-semibold">View Details</span> */}
@@ -58,6 +61,8 @@ const MainCard = ({ data }) => {
       {/* Bottom Right Corner Accent */}
       <div className="absolute bottom-0 right-0 h-8 w-8 bg-primary transform rotate-45 translate-x-4 translate-y-4"></div>
     </div>
+    </Link>
+
   );
 };
 

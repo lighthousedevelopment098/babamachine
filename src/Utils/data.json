@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "imageUrl":  "https://www.machinelines.com/wp-content/uploads/2024/10/100_0141-1-600x450.jpg",
+
+      "title": "Excavator",
+      "code": "EXC-001",
+      "serialNumber": "SN12345",
+      "year": "2020",
+      "hours": "3000",
+      "price": "$30,000",
+      "label": "New"
+    },
+    {
+      "id": 2,
+      "imageUrl":  "https://www.machinelines.com/wp-content/uploads/2024/10/100_0141-1-600x450.jpg",
+      "title": "Bulldozer",
+      "code": "BULL-002",
+      "serialNumber": "SN67890",
+      "year": "2019",
+      "hours": "4500",
+      "price": "$45,000",
+      "label": "New"
+    },
+    {
+      "id": 2,
+      "imageUrl":         "https://www.machinelines.com/wp-content/uploads/2024/10/100_0141-1-600x450.jpg",
+
+      "title": "Bulldozer",
+      "code": "BULL-002",
+      "serialNumber": "SN67890",
+      "year": "2019",
+      "hours": "4500",
+      "price": "$45,000",
+      "label": "Pickup"
+    },
+    {
+      "id": 2,
+      "imageUrl": "/news4.jpg",
+      "title": "Bulldozer",
+      "code": "BULL-002",
+      "serialNumber": "SN67890",
+      "year": "2019",
+      "hours": "4500",
+      "price": "$45,000",
+      "label": "New"
+    }
+  ]
+  
+

@@ -1,0 +1,271 @@
+
+  
+    .inner { 
+      width: 100%; 
+      max-width: 1070px; 
+      margin: 0 auto;
+    } 
+  
+    .inner.sm { 
+      max-width: 960px;
+    } 
+  
+    dl { 
+      list-style: none;
+    } 
+  
+    .price  { 
+      margin-top: 30px; 
+      background-color: #ffffff;
+    } 
+  
+    ul { 
+      list-style: none;
+    } 
+  
+    .contact  { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: flex-start; 
+      flex-wrap: wrap; 
+      margin-top: 30px;
+    } 
+  
+    .links  { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: flex-start; 
+      flex-wrap: wrap; 
+      margin-top: 30px;
+    } 
+  
+    .qr-code  { 
+      width: 220px; 
+      padding: 20px 0; 
+      margin: 40px auto 0; 
+      font-weight: bold; 
+      text-align: center; 
+      line-height: 1.375; 
+      background-color: #ffffff;
+    } 
+  
+    .iteminfo-list > *  { 
+      display: flex; 
+      justify-content: flex-start; 
+      align-items: stretch; 
+      flex-wrap: wrap; 
+      color: #ffffff;
+    } 
+  
+    .price > *  { 
+      display: flex; 
+      justify-content: flex-start; 
+      align-items: flex-start; 
+      flex-wrap: wrap;
+    } 
+  
+    li { 
+      list-style: none;
+    } 
+  
+    .contact > *  { 
+      width: calc((100% - 30px) / 2);
+    } 
+  
+    .btn-arrow { 
+      font-family: Avenir, sans-serif; 
+      display: inline-block;
+    } 
+  
+    .links > *  { 
+      width: calc((100% - 30px) / 2); 
+      text-align: right;
+    } 
+  
+    .font-en { 
+      font-family: Avenir, sans-serif;
+    } 
+  
+    figure { 
+      display: block;
+    } 
+  
+    .qr-code figure  { 
+      width: 54.5454545455%; 
+      margin: 0 auto 16px;
+    } 
+  
+    dt { 
+      list-style: none;
+    } 
+  
+    .iteminfo-list > * > dt  { 
+      padding: 30px 0;
+    } 
+  
+    .iteminfo-list > * > dt  { 
+      width: 30.2083333333%; 
+      border-top: solid 1px #8f8f8f;
+    } 
+  
+    dd { 
+      list-style: none;
+    } 
+  
+    .iteminfo-list > * > dd  { 
+      padding: 30px 0;
+    } 
+  
+    .iteminfo-list > * > dd  { 
+      width: 69.7916666667%; 
+      font-weight: bold; 
+      border-top: solid 1px #4d4d4d;
+    } 
+  
+    .price > * dt  { 
+      padding: 30px 0 26px;
+    } 
+  
+    .price > * dt  { 
+      width: 30.2083333333%; 
+      padding-left: 30px;
+    } 
+  
+    .price > * dd  { 
+      padding: 30px 0 26px;
+    } 
+  
+    .price > * dd  { 
+      width: 69.7916666667%;
+    } 
+  
+    .contact > * .tel  { 
+      padding: 30px 0; 
+      border-bottom: solid 1px #4d4d4d;
+    } 
+  
+    .btn-arrow > *  { 
+      position: relative; 
+      color: #2ec933 !important; 
+      display: inline-block; 
+      padding-bottom: 5px; 
+      min-width: 130px; 
+      font-size: 16px; 
+      font-weight: bold;
+    } 
+  
+    a,a:visited { 
+      color: #2ec933; 
+      text-decoration: none; 
+      transition: opacity 0.4s; 
+      cursor: pointer;
+    } 
+  
+    .btn-arrow.left > *  { 
+      padding-left: 40px; 
+      text-align: right;
+    } 
+  
+    .btn-arrow > ::after { 
+      content: ""; 
+      position: absolute; 
+      bottom: 0; 
+      left: 0; 
+      display: block; 
+      width: 100%; 
+      height: 7px; 
+      background-repeat: no-repeat; 
+      background-size: 100% 100%; 
+      background-position: top center;
+    } 
+  
+    .btn-arrow.left > ::after { 
+      background-image: url("https://www.machinelines.com/wp-content/themes/lines/img/arrow03.png"); 
+      transform: scaleX(-1);
+    } 
+  
+    a:hover,a:visited:hover { 
+      opacity: 0.5;
+    } 
+  
+    img { 
+      display: block; 
+      width: 100%; 
+      height: auto; 
+      padding: 0; 
+      margin: 0; 
+      border: none;
+    } 
+  
+    .iteminfo-list > * sup  { 
+      font-size: 10px;
+    } 
+  
+    .price > * dd a  { 
+      font-weight: bold; 
+      color: #2ec933; 
+      text-decoration: underline;
+    } 
+  
+    .btn01 > *  { 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      flex-wrap: wrap; 
+      width: 100%; 
+      height: 100%; 
+      padding: 1.25em; 
+      font-weight: bold; 
+      color: #ffffff !important; 
+      background-color: #2ec933;
+    } 
+  
+    a { 
+      color: #2ec933; 
+      text-decoration: none; 
+      transition: opacity 0.4s; 
+      cursor: pointer;
+    } 
+  
+    .contact > * .tel a  { 
+      font-family: Avenir, sans-serif; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      flex-wrap: wrap; 
+      font-size: 24px; 
+      font-weight: bold; 
+      color: #2ec933;
+    } 
+  
+    #stock .iteminfo .contact > * .tel a::before { 
+      content: ""; 
+      width: 17px; 
+      height: 17px; 
+      margin-right: 10px; 
+      background-image: url("https://www.machinelines.com/wp-content/themes/lines/img/icon_tel01.png"); 
+      background-size: 100% 100%; 
+      transform: translateY(-10%);
+    } 
+  
+    a:hover { 
+      opacity: 0.5;
+    } 
+  
+    input { 
+      -webkit-appearance: none; 
+      -moz-appearance: none; 
+      appearance: none; 
+      border: solid 1px #2ec933; 
+      display: block; 
+      background-color: #ffffff;
+    } 
+  
+    .contact > * .btn01 a  { 
+      font-size: 22px; 
+      color: #ffffff;
+    } 
+      
+  
+  
+  

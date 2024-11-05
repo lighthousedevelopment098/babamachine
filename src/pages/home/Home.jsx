@@ -22,7 +22,6 @@ const Home = () => {
         <Category />
         <NewsSection />
         <MembershipRegistration />
-        <Footer />
       </div>
     </>
   );

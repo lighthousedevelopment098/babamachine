@@ -12,7 +12,7 @@ const Header = () => {
       className="flex items-center justify-between  bg-white text-[#2EC933] shadow-md"
       style={{ padding: "1rem 3rem" }}
     >
-      <img src={logo} alt="Logo" className="h-10 " />
+      <img src={logo} alt="Logo" className="h-10 w-auto" />
       <Navbar />
       <LanguageSwitcher />
     </header>

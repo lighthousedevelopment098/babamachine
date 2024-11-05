@@ -1,103 +1,86 @@
-// src/components/Category.js
-import React from "react";
-import CategoryCard from "../../components/card/CategoryCard";
-import { Link } from "react-router-dom";
 
+import React from 'react';
+import { FaSearch } from 'react-icons/fa';
 const Category = () => {
-  // Card data to be mapped over
-  const cardsData = [
-    {
-      img: "/category1.png",
-      link: "/",
-      title: " Wheel loader",
-    },
-    {
-      img: "/category2.png",
-      link: "/",
-      title: " Excavator",
-    },
-    {
-      img: "/category3.png",
-      link: "/",
-      title: " Bulldozer",
-    },
-    {
-      img: "/category4.png",
-      link: "/",
-      title: "Grader",
-    },
-    {
-      img: "/category5.png",
-      link: "/",
-      title: "Dump truck",
-    },
-    {
-      img: "/category6.png",
-      link: "/",
-      title: "  Roller",
-    },
-    {
-      img: "/category7.png",
-      link: "/",
-      title: "Crane",
-    },
-    {
-      img: "/category8.png",
-      link: "/",
-      title: "Wheele excavator",
-    },
-    {
-      img: "/category9.png",
-      link: "/",
-      title: "Forklift",
-    },
-    {
-      img: "/category10.png",
-      link: "/",
-      title: "",
-    },
-    {
-      img: "/category11.png",
-      link: "/",
-      title: " Tire",
-    },
-    {
-      img: "/category12.png",
-      link: "/",
-      title: "Parts",
-    },
-    {
-      img: "/category13.png",
-      link: "/",
-      title: "Attachment",
-    },
-    {
-      img: "/category14.png",
-      link: "/",
-      title: "Others",
-    },
+  const categories = [
+    { name: 'Wheel loader', url: 'https://www.machinelines.com/stock-cat/wheel-loader', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category02.png' },
+    { name: 'Excavator', url: 'https://www.machinelines.com/stock-cat/excavator', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category01.png' },
+    { name: 'Bulldozer', url: 'https://www.machinelines.com/stock-cat/bulldozer', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category03.png' },
+    { name: 'Grader', url: 'https://www.machinelines.com/stock-cat/grader', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category04.png' },
+    { name: 'Dump truck', url: 'https://www.machinelines.com/stock-cat/dump-truck', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category05.png' },
+    { name: 'Roller', url: 'https://www.machinelines.com/stock-cat/roller', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category06.png' },
+    { name: 'Crane', url: 'https://www.machinelines.com/stock-cat/crane', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category07.png' },
+    { name: 'Wheele excavator', url: 'https://www.machinelines.com/stock-cat/wheele-excavator', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category08.png' },
+    { name: 'Rotary snowplow', url: 'https://www.machinelines.com/stock-cat/rotary-snowplow', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category09.png' },
+    { name: 'Forklift', url: 'https://www.machinelines.com/stock-cat/forklift', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category10.png' },
+    { name: 'Tire', url: 'https://www.machinelines.com/stock-cat/tire', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category11.png' },
+    { name: 'Parts', url: 'https://www.machinelines.com/stock-cat/parts', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category12.png' },
+    { name: 'Attachment', url: 'https://www.machinelines.com/stock-cat/attachment', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category13.png' },
+    { name: 'Others', url: 'https://www.machinelines.com/stock-cat/others', img: 'https://www.machinelines.com/wp-content/uploads/2022/08/icon_category14.png' },
   ];
 
   return (
-    <div className="bg-lightgray py-5 md:py-10">
-      <div className="  max-w-6xl mx-auto flex p-5 justify-between items-center ">
-        <h1 className="text-white text-sm md:text-xl font-semibold">
-          Search by category
-        </h1>
-        <Link
-          to={"/"}
-          className="text-primary font-semibold text-sm md:text-xl hover:text-hoverprimary flex flex-col items-center"
-        >
-          VIEW MORE
-          <img src="/arrow.png" alt="arrow" className="w-24 md:36 ml-2 h-2" />
-        </Link>
+    <section id="secStock" className="content bg-gray02 snipcss-GLp3E">
+      <div className="inner">
+        <h2 className="sec-title">Stock</h2>
+        <form method="get" className="search" action="https://www.machinelines.com/en/">
+          <input type="hidden" name="post_type" value="product" />
+          <dl className="search-wrap flex double">
+            <div>
+              <dt>Keyword</dt>
+              <dd>
+                <div className="input-search">
+                  <input type="search" name="s" placeholder="Please enter a keyword" />
+                  <button type="submit">
+                    <FaSearch />
+                  </button>
+                </div>
+              </dd>
+            </div>
+            <div>
+              <dt>Search by manufacturer</dt>
+              <dd>
+                <div className="select-wrap">
+                  <select name="maker" onChange={(e) => (window.location.href = e.target.value)} className="none">
+                    <option value="" selected>Please select a manufacturer</option>
+                    <option value="stock-tag/komatsu">Komatsu</option>
+                    <option value="stock-tag/hitachi">Hitachi</option>
+                    <option value="stock-tag/cat">Cat</option>
+                    <option value="stock-tag/kawasaki">Kawasaki</option>
+                    <option value="stock-tag/tcm">Tcm</option>
+                    <option value="stock-tag/kubota">Kubota</option>
+                    <option value="stock-tag/niigata">Niigata</option>
+                    <option value="stock-tag/nichijo">Nichijo</option>
+                    <option value="stock-tag/hino">Hino</option>
+                    <option value="stock-tag/mitsubishi">Mitsubishi</option>
+                    <option value="stock-tag/yanmar">Yanmar</option>
+                    <option value="stock-tag/others">Others</option>
+                  </select>
+                </div>
+              </dd>
+            </div>
+          </dl>
+        </form>
+        <h3 className="more-title">
+          <span className="title">Search by category</span>
+          <span className="btn-arrow right">
+            <a href="https://www.machinelines.com/stocks">VIEW MORE</a>
+          </span>
+        </h3>
+        <ul className="category-icon-list flex six">
+          {categories.map((category, index) => (
+            <li key={index}>
+              <a href={category.url}>
+                <figure className="icon">
+                  <img src={category.img} alt={category.name} />
+                </figure>
+                <span className="name">{category.name}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-      <div className="inner max-w-6xl mx-auto md:px-5 px-2 grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6 my-5">
-        {cardsData.map((card, index) => (
-          <CategoryCard key={index} data={card} />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
 
