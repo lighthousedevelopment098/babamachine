@@ -49,7 +49,7 @@ const SpecialSelection = () => {
           Special Selection
         </h1>
         <Link
-          to={"/"}
+          to={"/stock"}
           className="text-primary font-semibold text-sm   md:text-xl hover:text-hoverprimary flex flex-col items-center"
         >
           VIEW MORE

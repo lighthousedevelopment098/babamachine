@@ -1,33 +1,3 @@
-// import React, { useState, useEffect } from 'react';
-// import data from '../../Utils/data.json';
-// import MainCard from '../../components/card/MainCard';
-
-// const StockList = ({ filter }) => {
-//   const [filteredData, setFilteredData] = useState(data.machineData);
-
-//   useEffect(() => {
-//     const filtered = data.machineData.filter(item =>
-//       (!filter.keyword || item.title.toLowerCase().includes(filter.keyword.toLowerCase())) &&
-//       (!filter.category || item.category === filter.category) &&
-//       (!filter.manufacturer || item.manufacturer === filter.manufacturer)
-//     );
-//     setFilteredData(filtered);
-//   }, [filter]);
-
-//   return (
-//     <div className="max-w-6xl mx-auto my-5 flex justify-center gap-3 py-6" style={{ justifyContent: "center" }}>
-//       {filteredData.length > 0 ? (
-//         filteredData.map(item => (
-//           <MainCard key={item.serialNo} data={item} />
-//         ))
-//       ) : (
-//         <p>No results found</p>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default StockList;
 
 
 // StockList.jsx

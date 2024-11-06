@@ -9,7 +9,7 @@ import stockDetail from '../pages/stockDetail/stockDetail';
 const routes = [
   { path: '/', name: 'home', component: Home, showInNav: true}, // Use lowercase for translation keys
   { path: '/stock', name: 'stock', component: Stock, showInNav: true },
-  { path: '/category/:categoryName', name: 'catbyslug', component: Stock, showInNav: true },
+  { path: '/category/:categoryName', name: 'catbyslug', component: Stock, showInNav: false },
   { path: '/members', name: 'members', component: Members, showInNav: true },
   { path: '/register', name: 'register', component: Register, showInNav: false }, // Add name here
   { path: '/stockdetail', name: 'stockdetail', component: stockDetail, showInNav: false },
