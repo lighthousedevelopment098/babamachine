@@ -24,10 +24,10 @@ const MembershipRegistration = () => {
             <dl className="merit space-y-4">
               {["01", "02", "03"].map((num, index) => (
                 <div key={index}>
-                  <dt className="font-semibold text-white border-b-4 border-white pb-1">
+                  <dt className="font-semibold text-white border-b-4 border-white pb-1" style={{color:"white"}}>
                     Membership benefits {num}
                   </dt>
-                  <dd className="text-lg font-bold mt-2 border-b-4 border-black pb-1">
+                  <dd className="text-lg font-bold text-black  mt-2 border-b-4 border-black pb-1">
                     {index === 0
                       ? "Granted access to the price list of our second-hand machinery"
                       : index === 1

@@ -13,8 +13,8 @@ const MainCard = ({ data }) => {
       {/* Image Section */}
       <div className="relative">
         <img
-          src={data.imageUrl}
-          alt={data.title}
+          src={data?.image}
+          alt={data?.title}
           className="w-full h-48 md:h-56  object-cover"
         />
         {/* Label Badge */}

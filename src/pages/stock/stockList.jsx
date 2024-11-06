@@ -1,51 +1,67 @@
-// import React from 'react';
-// import { useTranslation } from 'react-i18next';
+// import React, { useState, useEffect } from 'react';
+// import data from '../../Utils/data.json';
+// import MainCard from '../../components/card/MainCard';
 
-// const Stock = () => {
-//   const { t } = useTranslation(); // Hook to access the translation function
+// const StockList = ({ filter }) => {
+//   const [filteredData, setFilteredData] = useState(data.machineData);
+
+//   useEffect(() => {
+//     const filtered = data.machineData.filter(item =>
+//       (!filter.keyword || item.title.toLowerCase().includes(filter.keyword.toLowerCase())) &&
+//       (!filter.category || item.category === filter.category) &&
+//       (!filter.manufacturer || item.manufacturer === filter.manufacturer)
+//     );
+//     setFilteredData(filtered);
+//   }, [filter]);
 
 //   return (
-//     <div className="p-4">
-//       <h1 className="text-3xl font-bold">{t('our_services')}</h1> 
-//       <p className="mt-2 text-lg">{t('service_description')}</p> Translated description
-//       <ul className="mt-4 list-disc list-inside">
-//         <li>{t('service_1')}</li> 
-//         <li>{t('service_2')}</li> 
-//         <li>{t('service_3')}</li> 
-//       </ul>
+//     <div className="max-w-6xl mx-auto my-5 flex justify-center gap-3 py-6" style={{ justifyContent: "center" }}>
+//       {filteredData.length > 0 ? (
+//         filteredData.map(item => (
+//           <MainCard key={item.serialNo} data={item} />
+//         ))
+//       ) : (
+//         <p>No results found</p>
+//       )}
 //     </div>
 //   );
 // };
 
-// export default Stock;
+// export default StockList;
 
 
-
+// StockList.jsx
 import React, { useState, useEffect } from 'react';
-import data from '../../Utils/data.json'; // Assuming data.json is in the same directory
+import data from '../../Utils/data.json';
 import MainCard from '../../components/card/MainCard';
 
 const StockList = ({ filter }) => {
-  const [filteredData, setFilteredData] = useState(data);
+  const [filteredData, setFilteredData] = useState(data.machineData);
 
   useEffect(() => {
-    setFilteredData(
-      data.filter(item => 
-        (!filter.keyword || item.title.includes(filter.keyword)) &&
-        (!filter.category || item.category === filter.category)
-      )
+    const filtered = data.machineData.filter(item =>
+      (!filter.keyword || item.title.toLowerCase().includes(filter.keyword.toLowerCase())) &&
+      (!filter.category || item.category.toLowerCase() === filter.category.toLowerCase()) &&
+      (!filter.manufacturer || item.manufacturer.toLowerCase() === filter.manufacturer.toLowerCase())
     );
+
+    console.log("Filtered data after applying filter:", filtered);
+    setFilteredData(filtered);
   }, [filter]);
+
+  console.log("FilteredData in StockList:", filteredData);
 
   return (
     <div className="max-w-6xl mx-auto my-5 flex justify-center gap-3 py-6" style={{justifyContent:"center"}}>
-      {filteredData.map(item => (
-        <MainCard key={item.id} data={item} />
-      ))}
+      {filteredData.length > 0 ? (
+        filteredData.map(item => (
+          <MainCard key={item.serialNo} data={item} />
+        ))
+      ) : (
+        <p>No results found</p>
+      )}
     </div>
   );
 };
 
 export default StockList;
-
-

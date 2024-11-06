@@ -10,7 +10,7 @@ const NextArrow = (props) => {
   return (
     <button
       onClick={onClick}
-      className="absolute right-1 md:-right-10 top-1/2 transform -translate-y-1/2 z-10 text-primary text-4xl md:text-4xl"
+      className="absolute right-3 bg-transparent md:-right-12 top-1/2 transform -translate-y-1/2 z-10 text-primary text-4xl md:text-4xl"
     >
       <AiOutlineRight />
     </button>
@@ -22,7 +22,7 @@ const PrevArrow = (props) => {
   return (
     <button
       onClick={onClick}
-      className="absolute left-1 md:-left-10 top-1/2 transform -translate-y-1/2 z-10 text-primary text-4xl md:text-4xl"
+      className="absolute left-3 bg-transparent md:-left-12 top-1/2 transform -translate-y-1/2 z-10 text-primary text-4xl md:text-4xl"
     >
       <AiOutlineLeft />
     </button>

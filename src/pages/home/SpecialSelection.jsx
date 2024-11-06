@@ -12,8 +12,8 @@ const SpecialSelection = () => {
       title: "HITACHI ZW40-5B #H81-15290",
       link: "YouTube",
       path: "/youtube.com",
-      imageUrl:
-        "https://www.machinelines.com/wp-content/themes/lines/img/icon_link03.png",
+      image:
+       "https://www.machinelines.com/wp-content/uploads/2024/10/100_0141-1-600x450.jpg",
     },
     {
       label: "PickUp",
@@ -21,7 +21,7 @@ const SpecialSelection = () => {
       title: "HITACHI ZW40-5B #H81-15290",
       link: "YouTube",
       path: "/youtube.com",
-      imageUrl:
+      image:
         "https://www.machinelines.com/wp-content/uploads/2024/10/100_0141-1-600x450.jpg",
     },
     {
@@ -29,7 +29,7 @@ const SpecialSelection = () => {
       date: "2401-212A",
       title: "KOMATSU WA380-8 #K88-12345",
       link: "YouTube",
-      imageUrl:
+      image:
         "https://www.machinelines.com/wp-content/uploads/2024/10/100_0141-1-600x450.jpg",
     },
     {
@@ -37,7 +37,7 @@ const SpecialSelection = () => {
       date: "2505-312B",
       title: "CAT 980M #C90-67890",
       link: "YouTube",
-      imageUrl:
+      image:
         "https://www.machinelines.com/wp-content/uploads/2024/10/100_0141-1-600x450.jpg",
     },
   ];
@@ -50,7 +50,7 @@ const SpecialSelection = () => {
         </h1>
         <Link
           to={"/"}
-          className="text-primary font-semibold text-sm md:text-xl hover:text-hoverprimary flex flex-col items-center"
+          className="text-primary font-semibold text-sm   md:text-xl hover:text-hoverprimary flex flex-col items-center"
         >
           VIEW MORE
           <img src="/arrow.png" alt="arrow" className="w-24 md:36 ml-2 h-2" />

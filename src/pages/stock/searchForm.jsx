@@ -1,35 +1,28 @@
-import React, { useState } from "react";
+import React, { useState } from "react";  
 import { FaSearch } from "react-icons/fa";
+import data from '../../Utils/data.json';
 import './searchform.css';
 
-const SearchForm = () => {
+const SearchForm = ({ onSearch }) => {
   const [isMakerVisible, setIsMakerVisible] = useState(false);
+  const [filter, setFilter] = useState({
+    keyword: '',
+    category: '',
+    manufacturer: ''
+  });
 
   const handleSearchClick = () => {
     setIsMakerVisible(!isMakerVisible);
   };
 
-  const categories = [
-    { label: "wheel-loader", value: "wheel-loader" },
-    { label: "hydraulic-excavator", value: "hydraulic-excavator" },
-    { label: "bulldozer", value: "bulldozer" },
-    { label: "grader", value: "grader" },
-    { label: "dump-truck", value: "dump-truck" },
-    { label: "rotary-snowplow", value: "rotary-snowplow" },
-    { label: "tire", value: "tire" },
-   
-  ];
-
-  const makers = [
-    { label: "komatsu", value: "komatsu" },
-    { label: "hitachi", value: "hitachi" },
-    { label: "CAT", value: "cat" },
-    { label: "kawasaki", value: "kawasaki" },
-    { label: "TCM", value: "tcm" },
-    { label: "kubota", value: "kubota" },
-    { label: "niigata", value: "niigata" },
-  
-  ];
+  const handleChange = (e) => {
+    const newFilter = {
+      ...filter,
+      [e.target.name]: e.target.value
+    };
+    setFilter(newFilter);
+    onSearch(newFilter); // Trigger filtering on each change
+  };
 
   return (
     <div className="flew">
@@ -39,7 +32,7 @@ const SearchForm = () => {
         </p>
 
         <div className={`accordion-content ${isMakerVisible ? "show" : ""}`}>
-          <form method="get" className="search" action="https://www.machinelines.com/">
+          <form className="search">
             <input type="hidden" name="post_type" value="product" />
             <dl className="flex tri">
               <div>
@@ -48,11 +41,15 @@ const SearchForm = () => {
                   <div className="input-search sm">
                     <input
                       type="search"
-                      name="s"
-                      placeholder=" Free word"
-                      className=""
+                      name="keyword"
+                      value={filter.keyword}
+                      onChange={handleChange}
+                      placeholder="Free word"
+                      className="outline-none"
                     />
-                    <button type="submit">
+                    <button type="submit" className="h-auto text-white"
+                    style={{color:"white", height:"auto"}}
+                    >
                       <FaSearch />
                     </button>
                   </div>
@@ -63,11 +60,11 @@ const SearchForm = () => {
                 <dt>Category</dt>
                 <dd>
                   <div className="select-wrap sm">
-                    <select name="category">
+                    <select name="category" value={filter.category} onChange={handleChange} className="outline-none">
                       <option value="">Category Select</option>
-                      {categories.map((category, index) => (
-                        <option key={index} value={category.value}>
-                          {category.label}
+                      {data.categories.map((category, index) => (
+                        <option key={index} value={category.name}>
+                          {category.name}
                         </option>
                       ))}
                     </select>
@@ -77,14 +74,14 @@ const SearchForm = () => {
 
               {isMakerVisible && (
                 <div>
-                  <dt>Maker</dt>
+                  <dt>Manufacturer</dt>
                   <dd>
                     <div className="select-wrap sm">
-                      <select name="maker">
-                        <option value="">kubota</option>
-                        {makers.map((maker, index) => (
-                          <option key={index} value={maker.value}>
-                            {maker.label}
+                      <select name="manufacturer" value={filter.manufacturer} onChange={handleChange}>
+                        <option value="">Manufacturer Select</option>
+                        {data.manufacturers.map((maker, index) => (
+                          <option key={index} value={maker.name}>
+                            {maker.name}
                           </option>
                         ))}
                       </select>

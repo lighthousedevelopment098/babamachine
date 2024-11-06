@@ -1,50 +1,175 @@
-[
+{
+  "machineData": [
     {
-      "id": 1,
-      "imageUrl":  "https://www.machinelines.com/wp-content/uploads/2024/10/100_0141-1-600x450.jpg",
-
-      "title": "Excavator",
-      "code": "EXC-001",
-      "serialNumber": "SN12345",
-      "year": "2020",
-      "hours": "3000",
-      "price": "$30,000",
-      "label": "New"
+      "title": "CAT 901C2 #YKY01616",
+      "serialNo": "YKY016165",
+      "year": "2017",
+      "hours": "760H",
+      "inspection": "No inspection required",
+      "weightCapacity": "0.4",
+      "options": "CAB/HEATER/SNOW TIRES/BUCKET",
+      "notes": "Tire chains are sold separately for ¥30,000 + tax.",
+      "price": "Member Only",
+      "image": "https://www.machinelines.com/wp-content/uploads/2024/07/100_1413-10.jpg",
+      "category": "Wheel loader",
+      "manufacturer": "CAT"
     },
     {
-      "id": 2,
-      "imageUrl":  "https://www.machinelines.com/wp-content/uploads/2024/10/100_0141-1-600x450.jpg",
-      "title": "Bulldozer",
-      "code": "BULL-002",
-      "serialNumber": "SN67890",
-      "year": "2019",
-      "hours": "4500",
-      "price": "$45,000",
-      "label": "New"
+      "title": "bulldozer 901C24 ",
+      "serialNo": "YKY016316",
+      "year": "2017",
+      "hours": "760H",
+      "inspection": "No inspection required",
+      "weightCapacity": "0.4",
+      "options": "CAB/HEATER/SNOW TIRES/BUCKET",
+      "notes": "Tire chains are sold separately for ¥30,000 + tax.",
+      "price": "Member Only",
+      "image": "https://www.machinelines.com/wp-content/uploads/2024/07/100_1413-10.jpg",
+      "category": "bulldozer",
+      "manufacturer": "CAT"
     },
     {
-      "id": 2,
-      "imageUrl":         "https://www.machinelines.com/wp-content/uploads/2024/10/100_0141-1-600x450.jpg",
-
-      "title": "Bulldozer",
-      "code": "BULL-002",
-      "serialNumber": "SN67890",
-      "year": "2019",
-      "hours": "4500",
-      "price": "$45,000",
-      "label": "Pickup"
+      "title": "KOMATSU WA150-5 #SB-W108-74533",
+      "serialNo": "SB-W1084-74533",
+      "year": "2007",
+      "hours": "9,356H",
+      "inspection": "2025-09-20",
+      "weightCapacity": "1.5",
+      "options": "WCAB/AC/Travel Damper/One-touch Coupler/Spike Tires/Bucket/Multi-blade",
+      "price": "Member Only",
+      "image": "https://www.machinelines.com/wp-content/uploads/2024/07/100_1370-9.jpg",
+      "category": "Excavator",
+      "manufacturer": "KOMATSU"
     },
     {
-      "id": 2,
-      "imageUrl": "/news4.jpg",
-      "title": "Bulldozer",
-      "code": "BULL-002",
-      "serialNumber": "SN67890",
-      "year": "2019",
-      "hours": "4500",
-      "price": "$45,000",
-      "label": "New"
+      "title": "KOMATSU WA150-5 #SB-W108-74533",
+      "serialNo": "SB-W108-745633",
+      "year": "2007",
+      "hours": "9,356H",
+      "inspection": "2025-09-20",
+      "weightCapacity": "1.5",
+      "options": "WCAB/AC/Travel Damper/One-touch Coupler/Spike Tires/Bucket/Multi-blade",
+      "price": "Member Only",
+      "image": "https://www.machinelines.com/wp-content/uploads/2024/07/100_1370-9.jpg",
+      "category": "Wheel loader",
+      "manufacturer": "KOMATSU"
+    },
+    {
+      "title": "Roller WA150-5 #SB-W108-74533",
+      "serialNo": "SB-W108-747533",
+      "year": "2007",
+      "hours": "9,356H",
+      "inspection": "2025-09-20",
+      "weightCapacity": "1.5",
+      "options": "WCAB/AC/Travel Damper/One-touch Coupler/Spike Tires/Bucket/Multi-blade",
+      "price": "Member Only",
+      "image": "https://www.machinelines.com/wp-content/uploads/2024/07/100_1370-9.jpg",
+      "category": "roller",
+      "manufacturer": "KOMATSU"
+    },
+    {
+      "title": "KOMATSU WA150-5 #SB-W108-74533",
+      "serialNo": "SB-W108-745733",
+      "year": "2007",
+      "hours": "9,356H",
+      "inspection": "2025-09-20",
+      "weightCapacity": "1.5",
+      "options": "WCAB/AC/Travel Damper/One-touch Coupler/Spike Tires/Bucket/Multi-blade",
+      "price": "Member Only",
+      "image": "https://www.machinelines.com/wp-content/uploads/2024/07/100_1370-9.jpg",
+      "link": "https://www.machinelines.com/stock/wheel-loader/2407-0009",
+      "category": "Wheel loader",
+      "manufacturer": "KOMATSU"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Wheel loader",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category02.png"
+    },
+    {
+      "name": "Excavator",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category01.png"
+    },
+    {
+      "name": "Bulldozer",
+      "url": "r",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category03.png"
+    },
+    {
+      "name": "Grader",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category04.png"
+    },
+    {
+      "name": "Dump truck",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category05.png"
+    },
+    {
+      "name": "Roller",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category06.png"
+    },
+    {
+      "name": "Crane",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category07.png"
+    },
+    {
+      "name": "Wheel excavator",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category08.png"
+    },
+    {
+      "name": "Rotary snowplow",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category09.png"
+    },
+    {
+      "name": "Forklift",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category10.png"
+    },
+    {
+      "name": "Tire",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category11.png"
+    },
+    {
+      "name": "Parts",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category12.png"
+    },
+    {
+      "name": "Attachment",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/icon_category13.png"
+    },
+    {
+      "name": "Others",
+      "url": "",
+      "img": "https://www.machinelines.com/wp-content/uploads/202202/08/icon_category14.png"
+    }
+  ],
+  "manufacturers": [
+    {
+      "name": "CAT",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/cat-logo.png"
+    },
+    {
+      "name": "KOMATSU",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/komatsu-logo.png"
+    },
+    {
+      "name": "Hitachi",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/hitachi-logo.png"
+    },
+    {
+      "name": "Volvo",
+      "img": "https://www.machinelines.com/wp-content/uploads/2022/08/volvo-logo.png"
     }
   ]
-  
-
+}
