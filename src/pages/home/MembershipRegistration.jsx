@@ -1,6 +1,7 @@
 
 import React from "react";
 import SettingCard from "../../components/card/SettingCard";
+import { Link } from "react-router-dom";
 const MembershipRegistration = () => {
   return (
     <div className=" bg-[#686868] h-full w-full p-5 md:py-10">
@@ -38,12 +39,12 @@ const MembershipRegistration = () => {
               ))}
             </dl>
             <p className="btn02 mt-6">
-              <a
-                href="https://www.machinelines.com/en/register"
+              <Link
+                to="/register"
                 className="inline-flex justify-center items-center min-w-[200px] h-12 px-4 py-2 bg-white text-black font-bold rounded-full hover:bg-green-100 transition duration-200"
               >
                 Membership registration
-              </a>
+              </Link>
             </p>
           </div>
         </div>
