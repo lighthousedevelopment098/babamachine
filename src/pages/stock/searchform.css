@@ -1,0 +1,303 @@
+
+    .inner { 
+      width: 100%; 
+      max-width: 1070px; 
+      margin: 0 auto;
+      /* background-color: #4d4d4d; */
+    } 
+  
+    #stock .refined > .inner { 
+      padding-bottom: 20px;
+    } 
+  
+    .accordion-content  { 
+      display: none; 
+      padding-bottom: 10px;
+    } 
+  
+    .accordion-content .search  { 
+      margin: 30px auto 0;
+    } 
+  
+    input { 
+      -webkit-appearance: none; 
+      -moz-appearance: none; 
+      appearance: none; 
+      border: solid 1px #2ec933; 
+      display: block; 
+      background-color: #ffffff;
+    } 
+  
+    dl { 
+      list-style: none;
+    } 
+  
+    .flex { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: stretch; 
+      flex-wrap: wrap;
+    } 
+  
+    .btn01.search { 
+      max-width: calc((100% - 60px) / 3); 
+      height: 86px;
+    } 
+  
+    .flex.tri > *  { 
+      width: calc((100% - 60px) / 3);
+    } 
+  
+    .accordion-content dl > div  { 
+      padding-bottom: 30px; 
+      border-bottom: solid 1px #4d4d4d;
+    } 
+  
+    button { 
+      -webkit-appearance: none; 
+      -moz-appearance: none; 
+      appearance: none; 
+      border: solid 1px #2ec933; 
+      display: block; 
+      background-color: #ffffff;
+    } 
+  
+    .btn01 > *  { 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      flex-wrap: wrap; 
+      width: 100%; 
+      height: 100%; 
+      padding: 1.25em; 
+      font-weight: bold; 
+      color: #ffffff !important; 
+      background-color: #2ec933;
+    } 
+  
+    .btn01.search > *  { 
+      color: #000000; 
+      text-decoration: none; 
+      transition: opacity 0.4s; 
+      cursor: pointer; 
+      font-size: 22px;
+    } 
+  
+    .btn01.search > :hover { 
+      opacity: 0.5;
+    } 
+  
+    dt { 
+      list-style: none;
+    } 
+  
+    .accordion-content dl dt  { 
+      padding: 30px 0; 
+      font-weight: bold; 
+      color: #ffffff;
+    } 
+  
+    dd { 
+      list-style: none;
+    } 
+  
+    .accordion-content dl dd.double  { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      flex-wrap: wrap; 
+      font-size: 15px;
+    } 
+  
+    .input-search { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: stretch; 
+      /* flex-wrap: wrap;  */
+      background-color: #ffffff; 
+      border: solid 1px #2ec933;
+    } 
+  
+    .select-wrap { 
+      position: relative;
+    } 
+  
+    .select-wrap:before,.select-wrap:after { 
+      content: ""; 
+      position: absolute; 
+      right: 14px; 
+      z-index: 10; 
+      display: block; 
+      width: 0; 
+      border-style: solid; 
+      pointer-events: none;
+    } 
+  
+    .select-wrap:before { 
+      bottom: 52%; 
+      border-width: 0 4.5px 8px 4.5px; 
+      border-color: transparent transparent #000000 transparent;
+    } 
+  
+    .select-wrap.sm:before,.select-wrap.sm:after { 
+      right: 10px;
+    } 
+  
+    .select-wrap.sm:before { 
+      border-width: 0 3px 5px 3px;
+    } 
+  
+    .select-wrap:after { 
+      top: 52%; 
+      border-width: 8px 4.5px 0 4.5px; 
+      border-color: #000000 transparent transparent transparent;
+    } 
+  
+    .select-wrap.sm:after { 
+      border-width: 5px 3px 0 3px;
+    } 
+  
+    .accordion-content dl dd.double > div  { 
+      width: calc((100% - 2em) / 2);
+    } 
+  
+    .accordion-content dl dd.double > span  { 
+      color: #ffffff;
+    } 
+  
+    .accordion-content dl dd.double > div.member  { 
+      display: flex; 
+      justify-content: flex-start; 
+      align-items: center; 
+      flex-wrap: wrap; 
+      width: 100%; 
+      margin-top: 10px; 
+      font-size: 14px;
+    } 
+  
+    .input-search input[type="search"]  { 
+      flex-grow: 1; 
+      padding: 0.2em 20px 0; 
+      line-height: 1; 
+      border: none;
+    } 
+  
+    .input-search.sm input[type="search"]  { 
+      padding: 0.2em 14px 0; 
+      font-size: 14px;
+    } 
+  
+    .input-search button  { 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      flex-wrap: wrap; 
+      color: #000000; 
+      text-decoration: none; 
+      transition: opacity 0.4s; 
+      cursor: pointer; 
+      width: 54px; 
+      height: 54px; 
+      background-color: #2ec933;
+    } 
+  
+    .input-search.sm button  { 
+      width: 34px; 
+      height: 34px;
+    } 
+  
+    .input-search button:hover { 
+      opacity: 0.5;
+    } 
+  
+    select { 
+      -webkit-appearance: none; 
+      -moz-appearance: none; 
+      appearance: none; 
+      border: solid 1px #2ec933; 
+      display: block; 
+      background-color: #ffffff;
+    } 
+  
+    .select-wrap select  { 
+      width: 100%; 
+      height: 54px; 
+      padding: 0.2em 20px 0; 
+      border: solid 1px #2ec933;
+    } 
+  
+    .select-wrap select.none  { 
+      font-weight: bold; 
+      color: #9b9b9b;
+    } 
+  
+    .select-wrap.sm select  { 
+      height: 36px; 
+      padding: 0.2em 14px 0; 
+      font-size: 14px;
+    } 
+  
+    a,a:visited { 
+      color: #000000; 
+      text-decoration: none; 
+      transition: opacity 0.4s; 
+      cursor: pointer;
+    } 
+  
+    .accordion-content dl dd.double > div.member a  { 
+      text-decoration: underline; 
+      color: #2ec933;
+    } 
+  
+    a:hover,a:visited:hover { 
+      opacity: 0.5;
+    } 
+  
+    .accordion-content dl dd.double > div.member span  { 
+      margin: 0 0.5em; 
+      color: #ffffff;
+    } 
+  
+    a { 
+      color: #000000; 
+      text-decoration: none; 
+      transition: opacity 0.4s; 
+      cursor: pointer;
+    } 
+  
+    a:hover { 
+      opacity: 0.5;
+    } 
+  
+    img { 
+      display: block; 
+      width: 100%; 
+      height: auto; 
+      padding: 0; 
+      margin: 0; 
+      border: none;
+    } 
+  
+    .input-search button img  { 
+      width: 50%;
+    } 
+  
+  
+  
+ 
+
+  .accordion {
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    display: none;
+    transition: max-height 0.4s ease;
+  }
+  
+  .accordion-content.show {
+    display: block;
+    max-height: 500px; /* Adjust this value based on the expected maximum height */
+  }
+  

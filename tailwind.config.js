@@ -9,9 +9,9 @@ module.exports = {
         primary: '#2EC933', //custom color green
         hoverprimary:'#96E499',// Custom hover lightgreen
         secondary: '#2F2F2F', // Custom  gray
-        lightgray: '#FBBF24',    // Custom lightgary color
+        lightgray: '#444444',    // Custom lightgary color
         graycustum:'#5B5B5B' ,// News Section bg-color
-        gray:'#686868',//last section bg-color
+        // gray:'#686868',//last section bg-color
         black:'#0A0A0A', //black color 
         white:'#FFFFFF' ,//white color
       
@@ -31,10 +31,6 @@ module.exports = {
       padding: {
         'custom': '2rem', // Custom padding
       },
-      fontSize:
-      {
-      'size': '1rem'
-      }
     },
   },
   plugins: [],
