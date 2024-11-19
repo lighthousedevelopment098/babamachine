@@ -4,7 +4,9 @@ import Header from './components/common/Header';
 import MainLayout from './layouts/MainLayout';
 import routes from './config/routes';
 import './styles/globals.css';
-
+import './app.css'
+import Footer from './components/common/footer/Footer';
+import ScrollToTopButton from './components/ScrollButton/ScrollToTop';
 const App = () => {
   return (
     <Router>
@@ -20,6 +22,8 @@ const App = () => {
           ))}
         </Routes>
       </MainLayout>
+      <Footer />
+      <ScrollToTopButton/>
     </Router>
   );
 };

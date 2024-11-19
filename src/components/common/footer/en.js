@@ -1,4 +1,7 @@
 export const footerTranslator = {
+    logo_dis:"Machine Lines Co., Ltd.",
+    Search_by_category:"Search by Category",
+    Search_by_Maker:"Search by Maker",
     english_home: "English Home",
     contact_no: "+81-11-875-1175",
     stock: "Stock",
@@ -17,7 +20,7 @@ export const footerTranslator = {
     parts: "Parts",
     attachment: "Attachment",
     others: "Others",
-    maker: "Maker",
+    makers: "Maker",
     ud: "UD",
     toyota: "Toyota",
     hitachi: "Hitachi",

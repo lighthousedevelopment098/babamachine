@@ -58,9 +58,9 @@ const Category = () => {
           </span>
         </h3>
 
-        <ul className="category-icon-list grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 px-4 six">
+        <ul className="category-icon-list grid grid-cols-2  md:grid-cols-4 lg:grid-cols-6 gap-2 px-4 six">
           {data.categories.map((category) => (
-            <li key={category.name}>
+            <li key={category.name} className='bg-white text-center'>
               <Link to={`/category/${category.name.toLowerCase()}`}>
                 <figure className="icon">
                   <img src={category.img} alt={category.name} />

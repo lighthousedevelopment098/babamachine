@@ -18,8 +18,8 @@ import { vendingMachineTranslations as vendingJp } from '../locales/translations
 import { loginTranslations as loginEn } from '../locales/translations/login/en'; // English Login translations
 import { loginTranslations as loginJp } from '../locales/translations/login/jp'; // Japanese Login translations
 
-import { footerTranslator as footerEn } from '../components/footer/en';
-import { footerTranslator as footerJp } from '../components/footer/jp';
+import { footerTranslator as footerEn } from '../components/common/footer/en';
+import { footerTranslator as footerJp } from '../components/common/footer/jp';
 
 i18n
   .use(initReactI18next)

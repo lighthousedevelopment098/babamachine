@@ -1,4 +1,7 @@
 export const footerTranslator = {
+    logo_dis:"株式会社マシンライン",
+    Search_by_category:"カテゴリから探す",
+    Search_by_Maker:"メーカーから探す",
     english_home: "英語ホーム",
     contact_no: "+81-11-875-1175",
     stock: "ストック",

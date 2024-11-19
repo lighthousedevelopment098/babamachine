@@ -31,6 +31,10 @@ module.exports = {
       padding: {
         'custom': '2rem', // Custom padding
       },
+      container: {
+        center: true,
+        padding: '1rem', 
+      },
     },
   },
   plugins: [],
