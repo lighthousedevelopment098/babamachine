@@ -193,9 +193,11 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-            <button className="p-4 mt-3 font-semibold rounded-md shadow-md shadow-white bg-primary text-white hover:bg-hoverprimary">
-              Member Login
-            </button>
+            <Link to="/login">
+  <button className="p-4 mt-3 font-semibold rounded-md shadow-md shadow-white bg-primary text-white hover:bg-hoverprimary">
+    Member Login
+  </button>
+</Link>
           </div>
         </div>
       </div>

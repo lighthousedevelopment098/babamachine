@@ -50,13 +50,17 @@ const MembershipRegistration = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 ">
+          <Link to={"/greeting"}>
           <SettingCard
+         
             title={"Company"}
             img={"/setting.png"}
             des={
               "We are a dealer of heavy-duty machinery for construction uses. We deal with businesses in Japan and worldwide."
             }
           />
+          </Link>
+          <Link to={"/contact"}>
           <SettingCard
             title={"Contact"}
             img={"/contact.png"}
@@ -64,6 +68,7 @@ const MembershipRegistration = () => {
               "Please feel free to contact us for information including our products and recruitment."
             }
           />
+          </Link>
         </div>
       </div>
     </div>
