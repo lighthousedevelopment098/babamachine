@@ -123,6 +123,7 @@
 
 // export default SliderComponent;
 
+
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -169,7 +170,6 @@ const SlideShow = () => {
   const settings = {
     dots: false, // Remove dots
     infinite: true, // Infinite scrolling
-    speed: 300, // Transition speed
     slidesToShow: 1, // Show 1 slide at a time
     slidesToScroll: 1, // Scroll one slide at a time
     autoplay: true, // Auto slide
