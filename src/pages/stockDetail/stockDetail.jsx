@@ -6,7 +6,7 @@ import RelatedMachines from './relatedData/relatedData'
 
 const stockDetail = () => {
   return (
-    <div className='bg-[#2F2F2F]'>
+    <div className='bg-[#2F2F2F] '>
     <PageHeader />
     <Gallery />
     <DetailTexts />

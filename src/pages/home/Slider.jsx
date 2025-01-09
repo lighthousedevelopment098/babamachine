@@ -200,7 +200,7 @@ const SlideShow = () => {
         ))}
       </Slider>
       {/* Custom Arrows */}
-      <div className="absolute top-1/2 left-0 right-0 flex justify-between px-6 transform -translate-y-1/2">
+      <div className="absolute top-1/2 left-0 right-0 flex justify-between px-6 mr-0 md:mr-8 transform -translate-y-1/2">
         <div className="custom-prev-arrow">
           <FaChevronLeft />
         </div>

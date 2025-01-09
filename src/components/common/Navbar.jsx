@@ -7,7 +7,7 @@ const Navbar = () => {
   const { t } = useTranslation(); // Hook to access the translation function
 
   return (
-    <nav className="flex items-center justify-center">
+    <nav className="flex items-center justify-between">
       {routes
         .filter((route) => route.showInNav)
         .map((route) => (

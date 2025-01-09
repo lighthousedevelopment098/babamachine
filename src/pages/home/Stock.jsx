@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 
 const Stock = () => {
   return (
-    <div className="bg-lightgray h-[100vh]">
+    <div className="bg-lightgray h-[100vh] ">
       <img src="/deco_stock01.png" alt="arrow" />
 
       <h1 className="text-4xl font-semibold text-white text-center py-5">

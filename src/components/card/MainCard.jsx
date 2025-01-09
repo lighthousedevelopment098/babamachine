@@ -6,7 +6,7 @@ const MainCard = ({ data }) => {
   return (
     <Link to='/stockdetail'>
 
-    <div className="relative h-full md:h-[70vh] w-full bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer group md:max-w-sm lg:max-w-md">
+    <div className="relative g  h-full md:h-[70vh] w-full bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer group md:max-w-sm lg:max-w-md">
       <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
         {/* <span className="text-white font-semibold">View Details</span> */}
       </div>

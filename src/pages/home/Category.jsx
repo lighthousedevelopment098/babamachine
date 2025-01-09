@@ -15,7 +15,7 @@ const Category = () => {
       <div className="inner">
         <h2 className="sec-title">Stock</h2>
         <form className="search">
-          <dl className="search-wrap flex double">
+          <dl className="search-wrap w-full flex  flex-col md:flex-row">
             <div>
               <dt>Keyword</dt>
               <dd>
@@ -34,7 +34,7 @@ const Category = () => {
               </dd>
             </div>
             <div>
-              <dt>Search by manufacturer</dt>
+              <dt className='mt-4 md:mt-0'>Search by manufacturer</dt>
               <dd>
                 <div className="select-wrap">
                   <select value={selectedManufacturer} onChange={handleManufacturerChange}>
@@ -53,7 +53,7 @@ const Category = () => {
 
         <h3 className="more-title">
           <span className="title">Search by category</span>
-          <span className="btn-arrow right">
+          <span className="btn-arrow right mt-3 md:mt-0">
             <Link to={'/stock'}>VIEW MORE</Link>
           </span>
         </h3>

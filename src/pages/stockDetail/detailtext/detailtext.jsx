@@ -29,7 +29,7 @@ const DetailTexts = () => {
   ];
 
   return (
-    <div className="product-details container px-28 py-10 flex flex-col items-center justify-center ">
+    <div className="product-details container   flex flex-col items-center justify-between ">
       <dl className="iteminfo-list">
         {productInfo.map((info, index) => (
           <div key={index}>
@@ -67,7 +67,7 @@ const DetailTexts = () => {
         ))}
       </ul>
 
-      <ul className="links">
+      <ul className=" flex justify-end items-end mt-3 md:mt-0">
         {links.map((link, index) => (
           <li key={index} className="btn-arrow left">
             <a href={link.url}>{link.label}</a>
@@ -75,7 +75,7 @@ const DetailTexts = () => {
         ))}
       </ul>
 
-      <div className="qr-code">
+      <div className="qr-code mb-4">
         <figure>
           <img src="https://api.qrserver.com/v1/create-qr-code/?data=/stock/wheel-loader/2410-0036" alt="QR code for KOMATSU WA80-3 #11689" />
         </figure>

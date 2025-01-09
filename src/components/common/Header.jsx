@@ -8,7 +8,7 @@ const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <header className="flex flex-col md:flex-row items-center justify-between bg-white text-[#2EC933] shadow-md p-4 md:p-6 lg:px-12">
+    <header className="flex flex-col md:flex-row items-center justify-between bg-white text-[#2EC933] shadow-md  p-4 md:p-6 lg:px-12">
       <img
         src={logo}
         alt="Logo"
@@ -21,7 +21,7 @@ const Header = () => {
       </div>
 
       {/* LanguageSwitcher positioned on the right side on larger screens */}
-      <div className="mt-2 md:mt-0">
+      <div className="mt-2 mr-0 md:mr-6 md:mt-0">
         <LanguageSwitcher />
       </div>
     </header>

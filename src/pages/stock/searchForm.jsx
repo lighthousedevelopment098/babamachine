@@ -34,7 +34,7 @@ const SearchForm = ({ onSearch }) => {
         <div className={`accordion-content ${isMakerVisible ? "show" : ""}`}>
           <form className="search">
             <input type="hidden" name="post_type" value="product" />
-            <dl className="flex tri">
+            <dl className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
                 <dt>Keyword</dt>
                 <dd>
