@@ -11,9 +11,9 @@ const Members = () => {
     <div className="bg-[#2F2F2F]">
           <MemberHeader title={pageTitle} />
 
-      <div id="secMypage" className="content intro snipcss-WAZWz">
+      <div id="secMypage" className="content intro snipcss-WAZWz ">
         <div className="inner">
-          <div className="wrap">
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
             <div className="block">
               <h3 className="heading">For member</h3>
               <div id="wpmem_login">
