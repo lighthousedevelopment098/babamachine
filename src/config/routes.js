@@ -17,7 +17,7 @@ const routes = [
 
   { path: '/members', name: 'members', component: Members, showInNav: true },
   { path: '/register', name: 'register', component: Register, showInNav: false }, // Add name here
-  { path: '/stockdetail', name: 'stockdetail', component: stockDetail, showInNav: false },
+  { path: '/stockdetail/:id', name: 'stockdetail', component: stockDetail, showInNav: false },
   { path: '*', name: 'not_found', component: NotFound, showInNav: false }, // Catch-all route
   { path: '/login', name: 'Login', component: Login, showInNav: false }, // Catch-all route
   { path: '/greeting', name: 'greeting', component: Greeting, showInNav: false }, // Catch-all route

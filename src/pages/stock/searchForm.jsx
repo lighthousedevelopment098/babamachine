@@ -1,6 +1,6 @@
 import React, { useState } from "react";  
 import { FaSearch } from "react-icons/fa";
-import data from '../../Utils/data.json';
+import data from '../../static-util/data.json';
 import './searchform.css';
 
 const SearchForm = ({ onSearch }) => {

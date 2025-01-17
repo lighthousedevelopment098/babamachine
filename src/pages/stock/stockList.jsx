@@ -2,7 +2,7 @@
 
 // StockList.jsx
 import React, { useState, useEffect } from 'react';
-import data from '../../Utils/data.json';
+import data from '../../static-util/data.json';
 import MainCard from '../../components/card/MainCard';
 
 const StockList = ({ filter }) => {

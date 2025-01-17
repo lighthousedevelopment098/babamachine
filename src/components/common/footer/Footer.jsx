@@ -103,7 +103,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import data from "../../../Utils/data.json"; // Importing data from JSON file
+import data from "../../../static-util/data.json"; // Importing data from JSON file
 
 const Footer = () => {
   const { categories, manufacturers } = data; // Destructuring data from JSON
